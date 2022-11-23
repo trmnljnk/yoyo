@@ -1,0 +1,11 @@
+
+
+[,console]
+----
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/project_security.key -C "Project Security"
+----
+
+[,console]
+----
+ssh-copy-id -i $HOME/.ssh/project_security.key.pub user@server1.cyberciti.biz
+----
